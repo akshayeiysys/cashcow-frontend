@@ -105,7 +105,7 @@ let index = 0;
 let farmed = []
 let index0 = 0;
 let staked = []
-const upcoming=[{title : 'Launchpad'},{title:'Cowblast'},{title:'Prediction'}];
+const upcoming=[{title : 'Launchpad',imgUrl :'/launchpad.png'},{title:'Cowblast',imgUrl :'/cowblast.png'},{title:'Prediction',imgUrl :'/images/prediction.png'}];
 let index1 =0;
 //  [{title : 'busd', earn : '10', apy :'4'},{title : 'eth', earn : '20', apy :'8'},{title : 'btc', earn : '30', apy :'12'}]
  let currentFarm;

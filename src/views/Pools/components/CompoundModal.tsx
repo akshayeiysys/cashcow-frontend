@@ -30,7 +30,7 @@ const CompoundModal: React.FC<DepositModalProps> = ({
 
   return (
     <Modal
-      title={`${t('Compound')} ${t(`${tokenName} Earned`)}`}
+      title={`${t('Compound')} ${tokenName} ${t(`Earned`)}}`}
       onDismiss={onDismiss}
     >
       <BalanceRow>

@@ -1,4 +1,5 @@
 {
+  "Withdraw":"Retirar",
   "Upcoming":"Próxima",
   "Cowblast":"Cowblast",
   "Simply stake tokens to earn.":"Simplemente apueste tokens para ganar",
@@ -598,7 +599,7 @@
   "Prize Pool": "Prize Pool",
   "Winnings collected!": "Winnings collected!",
   "Your prizes have been sent to your wallet": "Your prizes have been sent to your wallet",
-  "Collecting": "Collecting",
+  "Collecting": "Coleccionando",
   "Closing": "Closing",
   "Position reclaimed!": "Position reclaimed!",
   "Reclaim Position": "Reclaim Position",
@@ -822,7 +823,7 @@
   "Earn %assets% in Pools": "Earn %assets% in Pools",
   "Activate PanCOWSwap Profile to take part in next IFO‘s!": "Activate PanCOWSwap Profile to take part in next IFO‘s!",
   "Trading Battle": "Trading Battle",
-  "Prediction": "Prediction",
+  "Prediction": "Predicción",
   "Initial Farm Offering": "Initial Farm Offering",
   "An error occurred confirming transaction": "An error occurred confirming transaction",
   "Successfully Enabled!": "Successfully Enabled!",

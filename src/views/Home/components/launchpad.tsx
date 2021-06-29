@@ -28,18 +28,50 @@ const Label = styled.div`
 `
 const Coming = styled.div`
     text-align: center;
-    margin-top: 82px;
+    margin-top: 78px;
+    align-items: center;
     background: black;
     padding: 15px 0 15px 0;
-    color: white;
+    border: 0;
     border-radius: 16px;
+    box-shadow: 0px -1px 0px 0px rgb(14 14 44 / 40%) inset;
+    cursor: pointer;
+    display: -webkit-inline-box;
+    display: -webkit-inline-flex;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-family: inherit;
+    font-size: 16px;
+    font-weight: 600;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-letter-spacing: 0.03em;
+    -moz-letter-spacing: 0.03em;
+    -ms-letter-spacing: 0.03em;
+    letter-spacing: 0.03em;
+    line-height: 1;
+    opacity: 1;
+    outline: 0;
+    -webkit-transition: background-color 0.2s,opacity 0.2s;
+    transition: background-color 0.2s,opacity 0.2s;
+    height: 48px;
+    padding: 0 24px;
+    
+    color: white;
+    width: 100%;
   `
 const CardMidContent = styled(Heading).attrs({ size: 'xl' })`
   line-height: 44px;
 `
+const CardImage = styled.img`
+  margin-bottom: 16px;
+`
 
 interface value{
 title: string
+imgUrl: string
 }
 interface currentCard{
   currentCard:value
@@ -61,7 +93,8 @@ const { t } = useTranslation()
         
         <Label>{t('In')} 3 {t('days')}</Label>
         </div>
-        <Heading color="contrast" size="lg" style={{marginTop:'90px',margin:'65px 0 0px 30px',width:'100%'}}>
+        <CardImage src={currentCard.imgUrl} alt="cow logo" width={50} height={50} />
+        <Heading color="contrast" size="lg" style={{marginTop:'10px',margin:'0px 0px 0px 50px',width:'90%'}}>
         {t(`${currentCard.title}`)}
         {/* {t('LAUNCHPAD')} */}
         </Heading>

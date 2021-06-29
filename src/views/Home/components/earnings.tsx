@@ -75,7 +75,7 @@ const EarningsCard = () => {
         <Actions style={{maxWidth: '190px'}}>
         <CardImage style={{margin:'auto',display:'block'}} src="/images/img.png"  width={100} height={100} />
           {account ? (
-            <Button
+            <Button style={{marginTop:'20px'}}
               id="harvest-all"
               disabled={balancesWithValue.length <= 0 || pendingTx}
               onClick={harvestAllFarms}
@@ -88,7 +88,7 @@ const EarningsCard = () => {
                   })}
             </Button>
           ) : (
-            <UnlockButton width="100%" />
+            <UnlockButton style={{marginTop:'20px'}} width="100%" />
           )}
         </Actions>
         <Block>

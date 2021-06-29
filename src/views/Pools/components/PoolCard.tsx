@@ -89,7 +89,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
       stakingTokenDecimals={stakingToken.decimals}
     />,
   )
-
+console.log(stakingLimit,"stakingLimit")
   const [onPresentCompound] = useModal(
     <CompoundModal earnings={earnings} onConfirm={onStake} tokenName={stakingToken.symbol} />,
   )
@@ -177,7 +177,7 @@ const PoolCard: React.FC<HarvestProps> = ({ pool }) => {
                       : onPresentWithdraw
                   }
                 >
-                  {`Unstake ${stakingToken.symbol}`}
+                  {`${t(`Unstake`)} ${stakingToken.symbol}`}
                 </Button>
                 <StyledActionSpacer />
                 {!isOldSyrup && (

@@ -1,4 +1,5 @@
 {
+  "Withdraw":"Abheben",
   "Upcoming":"Bevorstehende",
   "Cowblast":"Kuhblast",
   "Simply stake tokens to earn.":"Setzen Sie einfach Token, um zu verdienen",
@@ -17,7 +18,7 @@
   "New token/block":"Neuer Token/Block",
   "Total Burned":"Gesamt verbrannt",
   "Burn Rate":"Verbrennungsrate",
-  "Launchpad":"STARTPAD",
+  "Launchpad":"Startrampe",
   "Coming soon":"Kommt bald",
 
   "Farm": "Ernten (Farm)",
@@ -822,7 +823,7 @@
   "Earn %assets% in Pools": "Verdienen Sie %assets% in Pools",
   "Activate PanCOWSwap Profile to take part in next IFO‘s!": "Activate PanCOWSwap Profile to take part in next IFO‘s!",
   "Trading Battle": "Trading Battle",
-  "Prediction": "Prediction",
+  "Prediction": "Prognose",
   "Initial Farm Offering": "Initial Farm Offering",
   "An error occurred confirming transaction": "An error occurred confirming transaction",
   "Successfully Enabled!": "Successfully Enabled!",

@@ -1,9 +1,11 @@
 import React from 'react'
+import PageHeader from 'components/PageHeader'
 import styled from 'styled-components'
 import { Heading, Text } from 'cashcow-ui'
 import { useTranslation } from 'contexts/Localization'
 import Container from 'components/layout/Container'
 import LotteryProgress from './LotteryProgress'
+
 
 const Title = styled(Heading).attrs({ as: 'h1', size: 'xl' })`
   color: ${({ theme }) => theme.colors.secondary};
@@ -11,7 +13,7 @@ const Title = styled(Heading).attrs({ as: 'h1', size: 'xl' })`
 `
 
 const Blurb = styled(Text)`
-  color: #ffffff;
+  color: #000000;
   font-size: 20px;
   font-weight: 600;
 `
@@ -67,7 +69,9 @@ const Hero = () => {
   const { t } = useTranslation()
 
   return (
-    <StyledHero style={{}}>
+    // <StyledHero style={{}}>
+    //   <StyledContainer>
+    <PageHeader>
       <StyledContainer>
         <LeftWrapper>
           <Title>{t('The COW Lottery')}</Title>
@@ -77,8 +81,10 @@ const Hero = () => {
         <RightWrapper>
           <LotteryProgress />
         </RightWrapper>
-      </StyledContainer>
-    </StyledHero>
+        </StyledContainer>
+        </PageHeader>
+    //   </StyledContainer>
+    // </StyledHero>
   )
 }
 

@@ -38,7 +38,7 @@ const PastDrawsHistoryCard: React.FC = () => {
   }
 
   return (
-    <Card>
+    <Card style={{overflow: 'visible'}}>
       <CardBody>
         <Heading size="md">{t('History')}</Heading>
         <Wrapper>

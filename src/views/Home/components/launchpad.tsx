@@ -91,9 +91,9 @@ const { t } = useTranslation()
           <div>
               
         
-        <Label>{t('In')} 3 {t('days')}</Label>
+        <Label className="labelSize">{t('In')} 3 {t('days')}</Label>
         </div>
-        <CardImage src={currentCard.imgUrl} alt="cow logo" width={50} height={50} />
+        <CardImage className="launchpadImage" src={currentCard.imgUrl} alt="cow logo" width={50} height={50} />
         <Heading color="contrast" size="lg" style={{marginTop:'10px',margin:'0px 0px 0px 50px',width:'90%'}}>
         {t(`${currentCard.title}`)}
         {/* {t('LAUNCHPAD')} */}

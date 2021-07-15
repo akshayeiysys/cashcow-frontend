@@ -49,7 +49,8 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({
         symbol={tokenName}
       />
       <ModalActions>
-        <Button variant="secondary" onClick={onDismiss}>
+        <div style={{padding: '24px 0 0 0x',textAlign:'center'}}>
+        <Button variant="secondary"  style={{marginRight:'20px'}} onClick={onDismiss}>
           {t('Cancel')}
         </Button>
         <Button
@@ -63,6 +64,7 @@ const WithdrawModal: React.FC<WithdrawModalProps> = ({
         >
           {pendingTx ? t('Pending Confirmation') : t('Confirm')}
         </Button>
+        </div>
       </ModalActions>
     </Modal>
   )

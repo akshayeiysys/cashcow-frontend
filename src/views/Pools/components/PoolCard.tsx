@@ -193,7 +193,7 @@ console.log(stakingLimit,"stakingLimit")
           {isFinished || isOldSyrup || !apr ? (
             '-'
           ) : (
-            <Balance fontSize="14px" isDisabled={isFinished} value={apr} decimals={2} unit="%" />
+            <Balance color='green' fontSize="14px" isDisabled={isFinished} value={apr} decimals={2} unit="%" />
           )}
         </StyledDetails>
         <StyledDetails>

@@ -58,13 +58,13 @@ const Syrup: React.FC = () => {
       <PageHeader>
         <Flex justifyContent="space-between">
           <Flex flexDirection="column" mr={['8px', 0]}>
-            <Heading as="h1" size="xxl" color="secondary" mb="24px">
+            <Heading className="sizeHead" as="h1" size="xxl" color="textSubtle" mb="24px">
               {t('Pools')}
             </Heading>
-            <Heading size="md" color="secondary">
+            <Heading size="md" color="textSubtle">
               {t('Simply stake tokens to earn.')}
             </Heading>
-            <Heading size="md" color="secondary">
+            <Heading size="md" color="textSubtle">
               {t('High APR, low risk.')}
             </Heading>
           </Flex>

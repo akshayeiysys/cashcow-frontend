@@ -169,16 +169,17 @@ const Farms: React.FC = () => {
   const farmsList = useCallback(
     (farmsToDisplay: Farm[]): FarmWithStakedValue[] => {
       let farmsToDisplayWithAPR: FarmWithStakedValue[] = farmsToDisplay.map((farm) => {
-        console.log(farm,"farm11")
+        // console.log(farm,"farm11")
         if (!farm.lpTotalInQuoteToken || !prices) {
           return farm
         }
 
         const quoteTokenPriceUsd = prices[getAddress(farm.quoteToken.address).toLowerCase()]
+        console.log(getAddress(farm.quoteToken.address).toLowerCase(),quoteTokenPriceUsd,'quoteTokenPriceUsd')
         const totalLiquidity = new BigNumber(farm.lpTotalInQuoteToken).times(quoteTokenPriceUsd)
-        console.log(totalLiquidity,farm.lpTotalInQuoteToken,quoteTokenPriceUsd,'totalLiquidity,farm.lpTotalInQuoteToken,quoteTokenPriceUsd')
+        
         const apr = isActive ? getFarmApr(farm.poolWeight, cakePrice, totalLiquidity) : 0
-        console.log(apr,farm.poolWeight, cakePrice, totalLiquidity,"apr,farm.poolWeight, cakePrice, totalLiquidity")
+        // console.log(apr,farm.poolWeight, cakePrice, totalLiquidity,"apr,farm.poolWeight, cakePrice, totalLiquidity")
         return { ...farm, apr, liquidity: totalLiquidity }
       })
 
@@ -367,10 +368,10 @@ const Farms: React.FC = () => {
   return (
     <>
       <PageHeader>
-        <Heading as="h1" size="xxl" color="secondary" mb="24px">
+        <Heading className="sizeHead" as="h1" size="xxl" color="textSubtle" mb="24px">
           {t('Farms')}
         </Heading>
-        <Heading size="lg" color="secondary">
+        <Heading size="lg" color="textSubtle">
           {t('Stake Liquidity Pool (LP) tokens to earn.')}
         </Heading>
       </PageHeader>

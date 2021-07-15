@@ -217,7 +217,7 @@ const [pendingTx, setPendingTx] = useState(false)
           <div style={{display:'flex',justifyContent:'space-around'}}>
           <CardImage src={poolImage} alt="cow logo" width={50} height={50} /> 
        
-        <Labels>{t('Popular')}</Labels>
+        <Labels className="labelSize">{t('Popular')}</Labels>
         </div>
          <Heading color="contrast" size="lg">
          {stakeObject.earningToken.symbol}

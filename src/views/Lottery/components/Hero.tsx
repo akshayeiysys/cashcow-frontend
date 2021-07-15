@@ -8,12 +8,12 @@ import LotteryProgress from './LotteryProgress'
 
 
 const Title = styled(Heading).attrs({ as: 'h1', size: 'xl' })`
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.textSubtle};
   margin-bottom: 24px;
 `
 
 const Blurb = styled(Text)`
-  color: #000000;
+  color: textSubtle;
   font-size: 20px;
   font-weight: 600;
 `

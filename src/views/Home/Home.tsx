@@ -461,7 +461,7 @@ const changeUpcoming=(value)=>{
       <div>
         <Cards>
           {/* <FarmStakingCard /> */}
-          <EarningsCard />
+          <EarningsCard earned={rowData}/>
           <TotalValueLockedCard />
           {/* <LotteryCard /> */}
         </Cards>

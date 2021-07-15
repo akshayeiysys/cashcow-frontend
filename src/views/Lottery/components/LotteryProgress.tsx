@@ -48,13 +48,13 @@ const LotteryProgress = () => {
         <StyledPrimaryText fontSize="20px" bold color="contrast">
           {lotteryHasDrawn ? timeUntilTicketSale : timeUntilLotteryDraw}
         </StyledPrimaryText>
-        <Text fontSize="20px" bold color="secondary">
+        <Text fontSize="20px" bold color="textSubtle">
           {lotteryHasDrawn ? t('Until ticket sale') : t('Until lottery draw')}
         </Text>
       </TopTextWrapper>
       {lotteryHasDrawn && (
         <BottomTextWrapper>
-          <Text color="secondary">
+          <Text color="textSubtle">
             {timeUntilLotteryDraw} {t('Until lottery draw')}
           </Text>
         </BottomTextWrapper>

@@ -19,6 +19,22 @@ const GlobalStyle = createGlobalStyle`
       max-width: 100%;
     }
   }
+  @media(max-width:480px){
+    .sizeEarning{
+      font-size: 12px;
+      font-weight: 400;
+    }
+    .labelSize{
+      width: 100% !important;
+    }
+    .launchpadImage{
+      margin-top: 12px;
+    }
+    .sizeHead{
+      font-size: 35px;
+      font-weight: 600;
+    }
+  }
 `
 
 export default GlobalStyle

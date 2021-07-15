@@ -117,7 +117,12 @@ const [pendingTx, setPendingTx] = useState(false)
           <Text>{t('APR')} %</Text>
           </Row>
           <Row>
-          <Text>${farmObject.earned.earnings.toFixed(3)}</Text>
+            {account ? (
+              <Text>${farmObject.earned.earnings.toFixed(3)}</Text>
+            ):(
+              <Text>0</Text>
+            )}
+          
           <Text style={{color:'green'}}>{farmObject.apr.value}</Text>
           </Row>
          <Actions style={{textAlign:'center'}}>
